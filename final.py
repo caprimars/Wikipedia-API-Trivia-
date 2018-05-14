@@ -107,4 +107,45 @@ def questions(): #turns the summaries into questions that have to be answered wi
 
 questions()
 
+# random pick a question and calculate score- Jiale Xu
+import random
+print("You have 5 chances!")
+print(random.choice(summary_list))
+
+
+# class for all users- Jiale Xu
+class players:
+
+   userCount = 0
+
+   def __init__(self, name, score):
+       self.name = name
+       self.score = score
+       players.userCount += 1
+
+   def playCount(self):
+       print("You totally play for 5 times")
+
+
+   def displayplayer(self):
+       print("Name : ", self.name, ", Score: ", self.score)
+
+# calculate score
+scores_total = 0
+if user_answer = value:
+   scores_total = difficulty * 10
+else:
+   scores_total = difficulty * 5
+
+check_result = input("Do you want to see your ranking, enter yes or no: ")
+if check_result == 'yes' or 'YES' or 'Yes':
+   player_name = input("PLease enter your name: ")
+   player_score = scores_total
+
+   player1 = players(player_name, player_score)
+   player1.displayplayer()
+   print("Total players: " + players.userCount )
+
+else:
+   print("Thank you for playing the game!")
 
